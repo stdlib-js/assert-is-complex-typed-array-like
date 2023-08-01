@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2020 The Stdlib Authors.
@@ -16,26 +16,17 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var isNonNegativeInteger = require( '@stdlib/assert-is-nonnegative-integer' ).isPrimitive;
-var MAX = require( '@stdlib/constants-array-max-typed-array-length' );
-
-
-// VARIABLES //
-
-var MAX_LENGTH = MAX / 2; // every complex array element has both a real and imaginary component stored as separate numbers, so the maximum length is half that of a normal typed array
-
-
-// MAIN //
+import { ComplexArrayLike } from '@stdlib/types/array';
 
 /**
 * Tests if a value is complex-typed-array-like.
 *
-* @param {*} value - value to test
-* @returns {boolean} boolean indicating if a value is complex-typed-array-like
+* @param value - value to test
+* @returns boolean indicating if a value is complex-typed-array-like
 *
 * @example
 * var arr = {
@@ -50,9 +41,9 @@ var MAX_LENGTH = MAX / 2; // every complex array element has both a real and ima
 * // returns true
 *
 * @example
-* var Complex64Array = require( '@stdlib/array-complex64' );
+* var Complex128Array = require( `@stdlib/array/complex128` );
 *
-* var val = isComplexTypedArrayLike( new Complex64Array( 4 ) );
+* var val = isComplexTypedArrayLike( new Complex128Array( 4 ) );
 * // returns true
 *
 * @example
@@ -71,25 +62,9 @@ var MAX_LENGTH = MAX / 2; // every complex array element has both a real and ima
 * var val = isComplexTypedArrayLike( 'beep' );
 * // returns false
 */
-function isComplexTypedArrayLike( value ) {
-	return (
-		value !== null &&
-		typeof value === 'object' &&
-
-		// Check for standard typed array properties:
-		isNonNegativeInteger( value.length ) &&
-		value.length <= MAX_LENGTH &&
-		typeof value.BYTES_PER_ELEMENT === 'number' &&
-		typeof value.byteOffset === 'number' &&
-		typeof value.byteLength === 'number' &&
-
-		// Check for properties necessary for complex typed arrays:
-		typeof value.get === 'function' &&
-		typeof value.set === 'function'
-	);
-}
+declare function isComplexTypedArrayLike( value: any ): value is ComplexArrayLike;
 
 
 // EXPORTS //
 
-module.exports = isComplexTypedArrayLike;
+export = isComplexTypedArrayLike;
