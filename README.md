@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isComplexTypedArrayLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-typed-array-like@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-complex-typed-array-like/tags). For example,
+
+```javascript
 import isComplexTypedArrayLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-typed-array-like@v0.1.0-deno/mod.js';
 ```
 
@@ -82,7 +87,7 @@ bool = isComplexTypedArrayLike({
 
 ```javascript
 import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
-import isComplexTypedArrayLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-typed-array-like@v0.1.0-deno/mod.js';
+import isComplexTypedArrayLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-typed-array-like@deno/mod.js';
 
 var bool;
 var arr;
