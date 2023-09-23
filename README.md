@@ -44,6 +44,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+isComplexTypedArrayLike = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-typed-array-like@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-complex-typed-array-like/tags). For example,
+
+```javascript
 isComplexTypedArrayLike = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-typed-array-like@v0.1.0-umd/browser.js' )
 ```
 
@@ -56,7 +61,7 @@ var isComplexTypedArrayLike = require( 'path/to/vendor/umd/assert-is-complex-typ
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-typed-array-like@v0.1.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-typed-array-like@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -109,7 +114,7 @@ bool = isComplexTypedArrayLike({
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-typed-array-like@v0.1.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-typed-array-like@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
