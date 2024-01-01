@@ -22,7 +22,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var isBoolean = require( '@stdlib/assert-is-boolean' ).isPrimitive;
 var Complex64Array = require( '@stdlib/array-complex64' );
 var Complex128Array = require( '@stdlib/array-complex128' );
