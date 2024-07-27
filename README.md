@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isComplexTypedArrayLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-typed-array-like@deno/mod.js';
+import isComplexTypedArrayLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-typed-array-like@v0.2.2-deno/mod.js';
 ```
 
 #### isComplexTypedArrayLike( value )
@@ -82,7 +82,7 @@ bool = isComplexTypedArrayLike({
 
 ```javascript
 import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
-import isComplexTypedArrayLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-typed-array-like@deno/mod.js';
+import isComplexTypedArrayLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-typed-array-like@v0.2.2-deno/mod.js';
 
 var bool;
 var arr;
